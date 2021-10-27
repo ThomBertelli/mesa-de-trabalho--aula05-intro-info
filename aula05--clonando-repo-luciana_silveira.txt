@@ -1,0 +1,115 @@
+PS C:\Users\lusil> git clone https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info.git
+Cloning into 'mesa-de-trabalho--aula05-intro-info'...
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS C:\Users\lusil> cd mesa-de-trabalh0--aula05-intro-info
+
+PS C:\Users\lusil> cd mesa-de-trabalho--aula05-intro-info
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git add .
+warning: LF will be replaced by CRLF in text1.txt.
+The file will have its original line endings in your working directory
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git commit -m "Adicionando arquivos text de 1 a 3"
+[main cf66022] Adicionando arquivos text de 1 a 3
+ 3 files changed, 5 insertions(+)
+ create mode 100644 text1.txt
+ create mode 100644 text2.txt
+ create mode 100644 text3.txt
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git push origin main  
+To https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info.git'
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+From https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info
+ * branch            main       -> FETCH_HEAD
+   7e50bf0..b3492e4  main       -> origin/main
+ texto4.txt | 1 +
+ texto5.txt | 0
+ 3 files changed, 1 insertion(+)
+ create mode 100644 texto4.txt
+ create mode 100644 texto6.txt
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 858 bytes | 429.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+   b3492e4..fc6e9bd  main -> main
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git pull origin main
+From https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info
+ * branch            main       -> FETCH_HEAD
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git add .
+warning: LF will be replaced by CRLF in text1.txt.
+The file will have its original line endings in your working directory
+[main d699864] Adicionando data ao text1.txt
+ 1 file changed, 1 insertion(+)
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git push origin main
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info.git
+   fc6e9bd..d699864  main -> main
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git status
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git pull origin main
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git add .
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git commit -m "Altera data arquivo text5"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info.git
+   d699864..abf34f2  main -> main
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git status
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git pull origin main
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 4), reused 11 (delta 4), pack-reused 0
+Unpacking objects: 100% (11/11), 1.16 KiB | 18.00 KiB/s, done.
+From https://github.com/ThomBertelli/mesa-de-trabalho--aula05-intro-info
+ * branch            main       -> FETCH_HEAD
+   abf34f2..39d65d3  main       -> origin/main
+Updating abf34f2..39d65d3
+Fast-forward
+ texto5.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\lusil\mesa-de-trabalho--aula05-intro-info> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
